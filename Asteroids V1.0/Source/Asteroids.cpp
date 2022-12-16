@@ -1,3 +1,4 @@
+//Daniel Mardunovich Dama7895
 #include "Asteroids.h"
 
 Asteroids::Asteroids(int size = 1, Vector2 pos = Vector2(0, 0), float angle = rand() % 180) : GameObject()

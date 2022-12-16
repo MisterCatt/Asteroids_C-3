@@ -1,3 +1,4 @@
+//Daniel Mardunovich Dama7895
 #include "BulletBag.h"
 
 BulletBag::~BulletBag()
@@ -26,7 +27,7 @@ Bullet* BulletBag::GetBullet() {
 }
 
 int BulletBag::BulletsInBag() {
-	return bullets.size();
+	return (int)bullets.size();
 }
 
 void BulletBag::Unload() {

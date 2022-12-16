@@ -1,3 +1,4 @@
+//Daniel Mardunovich Dama7895
 #include "Bullet.h"
 
 Bullet::Bullet() : GameObject()

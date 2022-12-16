@@ -1,2 +1,11 @@
-﻿  Game.cpp
-  raylib_template.vcxproj -> C:\Users\Danne\OneDrive\Skrivbord\Asteroids V1.0\Build\Debug\raylib_template.exe
+﻿  Asteroids.cpp
+  Bullet.cpp
+  BulletBag.cpp
+  Game.cpp
+  GameObject.cpp
+  main.cpp
+  Player.cpp
+  UFO.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  raylib_template.vcxproj -> C:\Users\Danne\Uni\C++3\Asteroids_C-3\Asteroids V1.0\Build\Debug\raylib_template.exe

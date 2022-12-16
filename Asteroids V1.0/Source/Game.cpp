@@ -1,3 +1,4 @@
+//Daniel Mardunovich Dama7895
 #include "Game.h"
 
 Game::Game()
@@ -30,6 +31,7 @@ Game::Game()
 
 Game::~Game()
 {
+	DeleteAll();
 }
 
 void Game::run()
@@ -82,6 +84,7 @@ void Game::Render()
 	
 }
 
+//Code that helps with worldwrapping for every GameObject
 void Game::WorldWrap(GameObject& obj) {
 	if (obj.GetPosition().x > GetScreenWidth()) {
 		obj.SetXPosition(0);
@@ -226,16 +229,13 @@ void Game::UFOUpdate()
 	UFOBulletTimer--;
 }
 
+
 void Game::DeleteAll()
 {
-	/*if (!asteroidsArray.empty()) {
-		for (Asteroids* a : asteroidsArray) {
-			asteroidsArray.pop_back();
-		}
-	}*/
-
 	asteroidsArray.clear();
 	renderBullets.clear();
+
+	UnloadTexture(playerLifeTexture);
 
 	delete bulletBag;
 	bulletBag = nullptr;

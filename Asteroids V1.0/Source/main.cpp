@@ -58,6 +58,9 @@ int main(void)
 
     // De-Initialization
     //--------------------------------------------------------------------------------------
+    delete Asteroids;
+    Asteroids = nullptr;
+    CloseAudioDevice();
     CloseWindow();        // Close window and OpenGL context
     //--------------------------------------------------------------------------------------
 

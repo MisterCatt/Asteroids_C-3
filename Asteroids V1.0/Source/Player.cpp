@@ -1,5 +1,4 @@
-#pragma once
-
+//Daniel Mardunovich Dama7895
 #pragma once
 #include "Player.h"
 
@@ -12,8 +11,8 @@ Player::Player() : GameObject()
 	tpSound = LoadSound("assets/teleport.ogg");
 	thrustSound = LoadSound("assets/thrust.ogg");
 
-	SetXPosition(GetScreenWidth() / 2);
-	SetYPosition(GetScreenHeight() / 2);
+	SetXPosition((float)GetScreenWidth() / 2);
+	SetYPosition((float)GetScreenHeight() / 2);
 	SetName("Player");
 	SetAngle(0);
 
@@ -71,8 +70,8 @@ void Player::Update() {
 		deadTimer--;
 
 		if (deadTimer <= 0) {
-			SetXPosition(GetScreenWidth() / 2);
-			SetYPosition(GetScreenHeight() / 2);
+			SetXPosition((float)GetScreenWidth() / 2);
+			SetYPosition((float)GetScreenHeight() / 2);
 			SetAngle(0);
 
 			respawned = true;

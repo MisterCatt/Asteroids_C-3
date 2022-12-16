@@ -1,3 +1,4 @@
+//Daniel Mardunovich Dama7895
 #include "UFO.h"
 UFO::UFO() : GameObject()
 {
